@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Papsilogan</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
+
+    <!-- CSS Sylesheets -->
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" href="images/egg-icon.png">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
+
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <div class="topnav">
+        <h1 class="title">Papsilogan</h1>
+        <!-- Trigger/Open The Modal -->
+        <button id="modal-btn"><i class="fa-solid fa-cart-shopping fa-2xl"></i></button>
+    </div>
+
+    <!-- CAROUSEL -->
+    <div class="for-padding">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+        <img class="carousel-img" src="images/silog1.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+        <img class="carousel-img" src="images/silog2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+        <img class="carousel-img" src="images/silog3.jpg" style="width:100%">
+        </div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+    </div>
+
+    <!-- MODAL -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>
+                <ul class="modal-content-ul"></ul>
+            </p>
+            <button id="place">Place Order</button>
+            <button id="clear">Clear Order</button>
+        </div>
+    </div>
+
+    <!-- PRODUCTS -->
+    <div class="for-padding">
+        <div class="row" id="products"></div>
+    </div>
+
+    <!-- JS Sylesheets -->
+    <script type="module" src="index.js" charset="UTF-8"></script>
+</body>
+</html>
